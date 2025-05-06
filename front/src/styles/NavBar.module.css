@@ -1,0 +1,7 @@
+.line {
+  @apply w-[1.4px] h-[90%] bg-white;
+}
+
+.span {
+  @apply m-1 text-center font-signika;
+}

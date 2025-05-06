@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background-1: #f9f9fb;
+  --background-2: #dddcde;
+  --foreground: #0c131f;
+  --color-1: #ff4d00;
+  --color-2: #00bfff;
+  --color-3: #3fe800;
+  --color-4: #2b2b2b;
+  --mono-1: #ffffff;
+  --mono-2: #000000;
+  --detail: #377ca4;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-1: #0c131f;
+    --background-2: #0c1a31;
+    --foreground: #fafafa;
+    --mono-1: #091c3b;
+    --mono-2: #00c0ff;
+    --detail: #94d8ff;
+  }
+}
+
+body {
+  @apply min-h-screen bg-background_1 text-foreground font-oxanium flex flex-col;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-signika;
+}
+
+h1 {
+  @apply text-[32px];
+}
+
+h2 {
+  @apply text-[28px];
+}
+
+h3 {
+  @apply text-2xl;
+}
+
+h4 {
+  @apply text-xl;
+}
+
+h5 {
+  @apply text-base;
+}
+
+h6 {
+  @apply text-xs;
+}
+
+input {
+  @apply m-[5px] w-full outline outline-sky bg-background_1 flex justify-center items-center;
+}
+
+.padding {
+  @apply w-full max-w-[1920px] p-12 m-[0_auto];
+}

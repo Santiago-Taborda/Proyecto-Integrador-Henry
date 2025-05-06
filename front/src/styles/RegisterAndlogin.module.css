@@ -1,0 +1,8 @@
+.campos {
+  @apply mt-[1%] w-full md:w-[500px] flex flex-col items-center;
+}
+
+.error {
+  @apply text-orange text-center;
+}
+
